@@ -5,35 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 188.114.96.3
+  server: 104.21.9.134
   port: 443
   udp: true
   type: vless
-  uuid: 893096ae-ed76-4440-bc34-f77c4872540f
+  uuid: 0b41f339-5809-46ef-8351-b03fdc441539
   tls: true
-  servername: masterserver1-vsh.kalleh.workers.dev
+  servername: fpoixf69hqt3e6d4urtb.mamadneizeh.workers.dev
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoieE1zSFhYR2hkcHZGUHI3cSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /vl/lYNtP7z8pJUmfp01tz5wEnuDujJtZ?ed=2560
     headers:
-      Host: masterserver1-vsh.kalleh.workers.dev
+      Host: fpoixf69hqt3e6d4urtb.mamadneizeh.workers.dev
 - name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 104.21.3.133
-  port: 2083
+  server: 153.76.185.84
+  port: 3090
   udp: true
   type: vless
-  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
-  tls: true
-  servername: fans.liverpool.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: fans.liverpool.qzz.io
+  uuid: 995b4d19-8c0d-4f81-a199-35a4f1d7744e
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 - name: 🇨🇿 捷克 (Czech) 03 - xiaohe
   server: 95.85.230.35
   port: 443
@@ -45,7 +38,7 @@ proxies:
   reality-opts:
     public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
   servername: de.oblaco.bet
-  client-fingerprint: ''
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
