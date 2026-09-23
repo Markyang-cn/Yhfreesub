@@ -23,7 +23,7 @@
         "server_name": "at.quattro-tech.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -35,13 +35,16 @@
     {
       "type": "vless",
       "tag": "🇦🇹 奥地利 (Austria) 03 - xiaohe",
-      "server": "193.8.215.96",
+      "server": "195.74.90.115",
       "server_port": 9443,
       "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
       "tls": {
         "enabled": true,
-        "server_name": "hub-vie-02.hanvpn.cc",
+        "server_name": "hub-vie-01.hanvpn.cc",
         "insecure": false,
+        "alpn": [
+          "h2"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -49,7 +52,7 @@
       },
       "transport": {
         "type": "grpc",
-        "service_name": "vie02-grpc-8e47a"
+        "service_name": "vie01-grpc-8e47a"
       }
     },
     {
