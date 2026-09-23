@@ -19,7 +19,7 @@ proxies:
   cipher: aes-256-cfb
   password: y9VURyNzJWNRYEGQ
 - name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
-  server: 84.32.215.94
+  server: 84.32.215.5
   port: 443
   udp: true
   type: vless
