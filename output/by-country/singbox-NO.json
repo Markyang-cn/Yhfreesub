@@ -5,22 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇮 斯洛文尼亚 (Slovenia) 01 - xiaohe",
-      "server": "node-slo01.rkitman.ru",
-      "server_port": 443,
-      "uuid": "322710c4-eef9-45ea-ad10-1efa1c6767d0",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇳🇴 挪威 (Norway) 01 - xiaohe",
+      "server": "46.29.238.88",
+      "server_port": 40443,
+      "uuid": "db320947-adfb-400d-b60b-383b8324bffe",
       "tls": {
         "enabled": true,
-        "server_name": "node-slo01.rkitman.ru",
+        "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU",
-          "short_id": "88d9dc52ef39c8bd"
+          "public_key": "aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc",
+          "short_id": "f7b2"
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇮 斯洛文尼亚 (Slovenia) 01 - xiaohe"
+        "🇳🇴 挪威 (Norway) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇮 斯洛文尼亚 (Slovenia) 01 - xiaohe"
+        "🇳🇴 挪威 (Norway) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
