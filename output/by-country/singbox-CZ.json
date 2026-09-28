@@ -6,32 +6,32 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "172.67.192.84",
-      "server_port": 2095,
-      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
+      "server": "153.76.185.147",
+      "server_port": 3090,
+      "uuid": "dca830a2-3c69-4e1b-bc0b-a2ea22af53ba",
       "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "index.harmonica02.workers.dev"
-        }
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
-      "server": "netra-85a0ca.shoameni19.workers.dev",
-      "server_port": 443,
-      "uuid": "20836693-ea23-4f40-a1e7-48a6da897917",
+      "server": "188.124.59.145",
+      "server_port": 18443,
+      "uuid": "8df7343e-2427-41fb-aad1-6c563296faf6",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "netra-85a0ca.shoameni19.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/bluTTbb7MO8rvX1COEYH4WW4qzbr2aui?ed=2560",
-        "headers": {
-          "Host": "netra-85a0ca.shoameni19.workers.dev"
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1KY_jqa2yPLBEBa-3TG77zs4ak2zQLGul4eexxCueyI",
+          "short_id": "f087eb07da743e94"
         }
       }
     },
