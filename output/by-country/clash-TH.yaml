@@ -5,28 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - xiaohe
-  server: 38.60.254.50
-  port: 22222
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: th001.zestapp778.com
-  skip-cert-verify: false
-- name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  server: funagfrdfs.alixxplay.com
-  port: 56415
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
-    short-id: cbd39bea0805e2
-  servername: www.kaidee.com
-  client-fingerprint: random
-- name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
   server: 45.154.26.63
   port: 443
   udp: true
@@ -39,6 +17,28 @@ proxies:
     short-id: 3c032a7e
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
+  server: 38.60.254.50
+  port: 22222
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: th001.zestapp778.com
+  skip-cert-verify: false
+- name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
+  server: funagfrdfs.alixxplay.com
+  port: 56415
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
+    short-id: cbd39bea0805e2
+  servername: www.kaidee.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
