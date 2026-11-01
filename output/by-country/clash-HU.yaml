@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
-  server: 8.47.69.6
+- name: 🇭🇺 匈牙利 (Hungary) 01 - xiaohe
+  server: 172.67.131.125
   port: 2083
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: f418674e-f518-4318-8ff9-e10000000046
   tls: true
-  servername: newwk1.f1w.de5.net
+  servername: smart-edge-424.arti98399-1905.workers.dev
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /sync
     headers:
-      Host: newwk1.f1w.de5.net
+      Host: smart-edge-424.arti98399-1905.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  - 🇭🇺 匈牙利 (Hungary) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  - 🇭🇺 匈牙利 (Hungary) 01 - xiaohe
 rules:
 - MATCH,PROXIES
