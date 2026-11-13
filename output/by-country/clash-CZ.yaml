@@ -18,17 +18,17 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 193.124.17.190
+  server: 153.52.69.249
   port: 443
   udp: true
   type: vless
-  uuid: d84c13b2-c2b9-4a7c-838f-05ac09ee422e
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 2a2ce9e42980
-  servername: www.mozilla.org
+    public-key: WVfpQqoeOrTtCq052_IOxvMv7RCWfLlAOxEfsH1aa2U
+    short-id: d5492c7a39515c65
+  servername: cache-78.topp-con.xyz
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES

@@ -4,23 +4,49 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
-      "server": "ad6ea328-ace0-45e1-8b69-e698536fa709.67dc6e59-0fd8-4ca5-ba29-26a8817e203b.byteprivatelink.com",
-      "server_port": 443,
-      "uuid": "2a778078-9f4f-4203-a204-6fb94547b707",
-      "flow": "xtls-rprx-vision",
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
+      "server": "161.114.15.215",
+      "server_port": 30502,
+      "password": "5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm",
       "tls": {
         "enabled": true,
-        "server_name": "live.douyin.com",
+        "server_name": "www.cloudflare.com",
+        "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 03 (家宽) - xiaohe",
+      "server": "122.176.216.52",
+      "server_port": 443,
+      "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+      "tls": {
+        "enabled": true,
+        "server_name": "app-6ada5023.deploy.meerasolution.com",
+        "insecure": false,
+        "utls": {
           "enabled": true,
-          "public_key": "xBBebAa3_FmRJAzPnEP9seJneZtPiIZVLHo23pHxRxc",
-          "short_id": "a0134868"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+        "headers": {
+          "Host": "app-6ada5023.deploy.meerasolution.com"
         }
       }
     },
@@ -29,14 +55,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
+        "🇮🇳 印度 (India) 03 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
+        "🇮🇳 印度 (India) 03 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
