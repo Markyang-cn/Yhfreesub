@@ -25,7 +25,20 @@ proxies:
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: explorecareerpathsandunlockprofessionalsuccesstoday.com
-  skip-cert-verify: true
+  skip-cert-verify: false
+- name: 🇿🇦 南非 (South Africa) 04 - xiaohe
+  server: 102.134.35.197
+  port: 443
+  udp: true
+  type: vless
+  uuid: 122e2b61-6b68-4872-a1c8-3db9a0d554e0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qOGwfAG_taSX01wGv1eq8cLkPHDSa-RNvp9iAw-8SDs
+    short-id: 4402f260a449cce9
+  servername: www.ebay.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -34,6 +47,7 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 01 - xiaohe
   - 🇿🇦 南非 (South Africa) 02 - xiaohe
   - 🇿🇦 南非 (South Africa) 03 - xiaohe
+  - 🇿🇦 南非 (South Africa) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -42,5 +56,6 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 01 - xiaohe
   - 🇿🇦 南非 (South Africa) 02 - xiaohe
   - 🇿🇦 南非 (South Africa) 03 - xiaohe
+  - 🇿🇦 南非 (South Africa) 04 - xiaohe
 rules:
 - MATCH,PROXIES
